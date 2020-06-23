@@ -56,6 +56,12 @@ def load_train_data(model=None, spark=None):
         train_3 = train_3.join(train_vds_3, ['datetime'])
         train = train.union(train_2)
         train = train.union(train_3)
+
+        # TODO: try filters such as "speed_overground" and "load" of the vessel
+
+        # train = train[train['speed_overground']>10]
+        # train = train.filter(train['speed_overground']>10)
+
         del train_2, train_vds, train_vds_2, train_3, train_vds_3
         gc.collect()
 
