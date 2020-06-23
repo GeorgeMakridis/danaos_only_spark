@@ -114,6 +114,8 @@ out
 gen
 /src/input/*
 /input_hdf5/*
+/myGBTRegressor_nan
+/regression_preds_5.parquet
 5_mes.csv
 5_vds.csv
 7_mes.csv
@@ -122,7 +124,7 @@ gen
 8_vds.csv
 speed_predictions_5.csv
 speed_predictions_7.csv
-speed_predictions_7.csv
+speed_predictions_8.csv
 playground.py
 plotings.py
 results.py
